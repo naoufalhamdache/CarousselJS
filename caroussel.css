@@ -1,0 +1,113 @@
+#caroussel {
+	/*display: none;*/
+	position: relative;
+	width: 800px;
+	height: 500px;
+	border : 2px solid white;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-webkit-box-shadow: 2px 2px 7px 0px rgba(0,0,0,0.3); 
+	box-shadow: 2px 2px 7px 0px rgba(0,0,0,0.3);
+	overflow: hidden;
+}
+
+#caroussel img {
+	width: 100%;
+	position: absolute;
+	display: none;
+}
+
+#caroussel img:first-child {
+	display: block;
+}
+
+#directions img {
+	opacity: 0.7;
+	display: block;
+	position: absolute;
+	width: 35px;
+	height: 35px;
+	top: 225px;
+	-moz-border-radius: 35px;
+	-webkit-border-radius: 35px;
+	cursor:pointer;
+}
+
+#left {
+	left: 40px;
+	transition: all 0.1s ease-in-out;
+}
+
+#left:hover {
+	opacity: 0.9;
+	transition: opacity 0.3s linear;
+  transform: scale(1.3, 1.3);
+}
+
+#left.skl {
+  transform: scale(1, 1);
+  transition: all 0.05s ease-in-out;
+}
+
+#right {
+	right: 40px;
+	transition: all 0.2s ease-in-out;
+}
+
+#right:hover {
+	opacity: 0.9;
+	transition: opacity 0.3s linear;
+  transform: scale(1.3, 1.3);
+}
+
+#right.skl {
+  transform: scale(1, 1);
+  transition: all 0.05s ease-in-out;
+}
+
+#ronds {
+	display: block;
+	position: absolute;
+	z-index: 1;
+	width: 800px;
+	height: 22px;
+	top : 455px;
+	left: 2px;
+}
+
+#vide, #plein {
+	position: relative;
+	z-index: 2;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#plein {
+	position: relative;
+	top: -25px;
+}
+
+td img {
+	width: 12px;
+	height: 12px;
+}
+
+#plein td{
+  opacity: 0;
+  transition: all 0.2s ease-in-out;
+  cursor:pointer;
+}
+
+#plein td:first-child {
+  opacity: 0.7;
+}
+
+#vide {
+  opacity: 0.5;
+}
+
+section {
+	width: 800px;
+	height: 500px;
+	position: relative;
+}
